@@ -1,16 +1,17 @@
 import java.util.Scanner;
-
-import java.util.Scanner;
-
 public class MahasiswaDemo16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MahasiswaBerprestasi16 list = new MahasiswaBerprestasi16();
-        int jumMhs = 5;
+
+        System.out.print("Masukkan jumlah mahasiswa : ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+
+        MahasiswaBerprestasi16 list = new MahasiswaBerprestasi16(jumMhs);
 
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
-            System.out.print("NIM     : ");
+            System.out.print("NIM     :");
             String nim = sc.nextLine();
             System.out.print("Nama    : ");
             String nama = sc.nextLine();
